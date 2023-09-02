@@ -300,8 +300,6 @@ impl WinKernelDriver {
 
             if device == handleapi::INVALID_HANDLE_VALUE {
                 return Err("Error occurred getting handle on kernel driver".to_string());
-            } else {
-                println!("Handle created");
             }
             
             self.device = Some(device);
